@@ -1,0 +1,243 @@
+[
+  {
+    "op": "core/row-star",
+    "description": "Star rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "99",
+                "l": "99"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "STATOCIVICO",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "STATOCIVICO"
+        }
+      ]
+    },
+    "starred": true
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "99",
+                "l": "99"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "STATOCIVICO",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "STATOCIVICO"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column RESIDENZIALE",
+    "columnName": "RESIDENZIALE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column STATOCIVICO",
+    "columnName": "STATOCIVICO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DATA_APPLICAZIONE",
+    "columnName": "DATA_APPLICAZIONE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DATA_SOPPRESSIONE",
+    "columnName": "DATA_SOPPRESSIONE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column GAUSSB_X",
+    "columnName": "GAUSSB_X"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column GAUSSB_Y",
+    "columnName": "GAUSSB_Y"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column WGS84_X",
+    "columnName": "WGS84_X"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column WGS84_Y",
+    "columnName": "WGS84_Y"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column WEBMERCATOR_X",
+    "columnName": "WEBMERCATOR_X"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column WEBMERCATOR_Y",
+    "columnName": "WEBMERCATOR_Y"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DATA_MODFINE",
+    "columnName": "DATA_MODFINE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PASSOCARRAIO",
+    "columnName": "PASSOCARRAIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LIVELLO",
+    "columnName": "LIVELLO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DATA_ATTIVAZIONE",
+    "columnName": "DATA_ATTIVAZIONE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BARRA2",
+    "columnName": "BARRA2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NUMEROCOMPLETO",
+    "columnName": "NUMEROCOMPLETO"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LAT_WGS84 using expression grel:replace(value, \",\", \".\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LAT_WGS84",
+    "expression": "grel:replace(value, \",\", \".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LONG_WGS84 using expression grel:replace(value, \",\", \".\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LONG_WGS84",
+    "expression": "grel:replace(value, \",\", \".\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LAT_WGS84 using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LAT_WGS84",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LONG_WGS84 using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LONG_WGS84",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LAT_WGS84 using expression grel:round(value*1000000)/1000000.0",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LAT_WGS84",
+    "expression": "grel:round(value*1000000)/1000000.0",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LONG_WGS84 using expression grel:round(value*1000000)/1000000.0",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LONG_WGS84",
+    "expression": "grel:round(value*1000000)/1000000.0",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column addr:street at index 1 based on column CODICE_VIA using expression grel:cell.cross(\"Viario_20181001 csv\", \"CODICE_VIA\").cells[\"TIPO\"].value[0]+\" \"+\ncell.cross(\"Viario_20181001 csv\", \"CODICE_VIA\").cells[\"DESCRITTIVO\"].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "addr:street",
+    "columnInsertIndex": 1,
+    "baseColumnName": "CODICE_VIA",
+    "expression": "grel:cell.cross(\"Viario_20181001 csv\", \"CODICE_VIA\").cells[\"TIPO\"].value[0]+\" \"+\ncell.cross(\"Viario_20181001 csv\", \"CODICE_VIA\").cells[\"DESCRITTIVO\"].value[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column addr:housenumber at index 3 based on column NUMERO using expression grel:if ( isNonBlank(cells[\"BARRA\"].value),  cells.NUMERO.value+toString(cells.LETTERA.value)+\"/\"+cells[\"BARRA\"].value,   cells.NUMERO.value+toString(cells.LETTERA.value) )",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "addr:housenumber",
+    "columnInsertIndex": 3,
+    "baseColumnName": "NUMERO",
+    "expression": "grel:if ( isNonBlank(cells[\"BARRA\"].value),  cells.NUMERO.value+toString(cells.LETTERA.value)+\"/\"+cells[\"BARRA\"].value,   cells.NUMERO.value+toString(cells.LETTERA.value) )",
+    "onError": "set-to-blank"
+  }
+]

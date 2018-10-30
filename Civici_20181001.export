@@ -1,0 +1,10 @@
+    {
+      "id"  : {{(cells["IDMASTER"].value)}},
+      "lat" : {{(cells["LAT_WGS84"].value)}},
+      "lon" : {{(cells["LONG_WGS84"].value)}},
+      "tags" : {
+               "ref:ComuneMilano" : {{jsonize(cells["IDMASTER"].value)}},
+               "addr:street" : {{jsonize(cells["addr:street"].value)}},
+               "addr:housenumber" : {{jsonize(cells["addr:housenumber"].value)}}
+               }
+    }

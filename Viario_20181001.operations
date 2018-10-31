@@ -355,5 +355,588 @@
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'eufemia"
+        ],
+        "to": "Sant'Eufemia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'alessandro"
+        ],
+        "to": "Sant'Alessandro"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'orsola"
+        ],
+        "to": "Sant'Orsola"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'angelo"
+        ],
+        "to": "Sant'Angelo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'arnaldo"
+        ],
+        "to": "Sant'Arnaldo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'alessandro Sauli"
+        ],
+        "to": "Sant'Alessandro Sauli"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'erlembaldo"
+        ],
+        "to": "Sant'Erlembaldo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'uguzzone"
+        ],
+        "to": "Sant'Uguzzone"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'antonio Maria Zaccaria"
+        ],
+        "to": "Sant'Antonio Maria Zaccaria"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'achilleo"
+        ],
+        "to": "Sant'Achilleo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'arialdo"
+        ],
+        "to": "Sant'Arialdo"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'agostino"
+        ],
+        "to": "Sant'Agostino"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'eustorgio"
+        ],
+        "to": "Sant'Eustorgio"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'ampellio"
+        ],
+        "to": "Sant'Ampellio"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'abbondio"
+        ],
+        "to": "Sant'Abbondio"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'annibale di Francia"
+        ],
+        "to": "Sant'Annibale di Francia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'eusebio"
+        ],
+        "to": "Sant'Eusebio"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sant'elena"
+        ],
+        "to": "Sant'Elena"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DESCRITTIVO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "invert": false,
+          "caseSensitive": true,
+          "query": "Sant'",
+          "name": "DESCRITTIVO",
+          "type": "text",
+          "columnName": "DESCRITTIVO"
+        }
+      ]
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Antonio Sant'elia"
+        ],
+        "to": "Antonio Sant'Elia"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column DESCRITTIVO using expression grel:replace(value, \" Alla \", \" alla \")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DESCRITTIVO",
+    "expression": "grel:replace(value, \" Alla \", \" alla \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
   }
 ]

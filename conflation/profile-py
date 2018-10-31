@@ -39,7 +39,7 @@ bbox = True
 master_tags = ('addr:housenumber', 'addr:street')
 
 delete_unmatched = False
-tag_unmatched = { 'fixme':'questo civico può essere cambiato: controllare' }
+tag_unmatched = { 'fixme':'questo civico può essere cambiato o in posizione errata' }
 
 
 # max distance to search for a match in meters

@@ -10,6 +10,8 @@ Civici_20181001.operations
 
 ## Exporting
 Civici_20181001.export
+#### tests
+partial areas has been selected thru lat&log numeric facets
 
 ## Conflation
 conflate -i Civici_20181001-csv-test.txt.json -v  -c preview_test.json -o test.osm profile-py

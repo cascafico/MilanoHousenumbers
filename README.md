@@ -1,3 +1,7 @@
+## Requisites
+Below steps has been accomplished thru Openrefine (Cleaning to exporting), OSM_conflator tool and audit online tool.
+
+
 ## Getting source dataset
 wget https://geoportale.comune.milano.it/Download/area_download/SIT/Toponomastica/OpenData_Civici.zip
 

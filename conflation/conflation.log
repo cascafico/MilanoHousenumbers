@@ -1,0 +1,48 @@
+40 mt***************
+08:47:20 Dataset points duplicate each other: 30274 and 215055
+08:47:20 Dataset points duplicate each other: 170848 and 30369
+08:47:20 Dataset points duplicate each other: 170847 and 30378
+08:47:20 Dataset points duplicate each other: 30469 and 197512
+08:47:20 Dataset points duplicate each other: 30477 and 197494
+08:47:21 Found 50 duplicates in the dataset
+08:47:21 Read 1177 items from the dataset
+
+08:47:41 Downloaded 521 objects from OSM
+08:47:47 Matched 208 points
+08:47:47 Removed 49 unmatched duplicates
+08:47:47 Adding 920 unmatched dataset points
+08:47:47 Deleted 0 and retagged 313 unmatched objects from OSM
+
+
+20 mt***************
+08:49:28 Dataset points duplicate each other: 170848 and 30369
+08:49:28 Dataset points duplicate each other: 170847 and 30378
+08:49:28 Dataset points duplicate each other: 30469 and 197512
+08:49:28 Dataset points duplicate each other: 30477 and 197494
+08:49:28 Dataset points duplicate each other: 30477 and 197495
+08:49:30 Found 37 duplicates in the dataset
+08:49:30 Read 1177 items from the dataset
+
+08:49:37 Downloaded 521 objects from OSM
+08:49:43 Matched 183 points
+08:49:43 Removed 37 unmatched duplicates
+08:49:43 Adding 957 unmatched dataset points
+08:49:43 Deleted 0 and retagged 338 unmatched objects from OSM
+
+
+10 mt***************
+08:52:55 Dataset points duplicate each other: 30469 and 197512
+08:52:55 Dataset points duplicate each other: 30477 and 197494
+08:52:55 Dataset points duplicate each other: 30477 and 197495
+08:52:55 Dataset points duplicate each other: 197514 and 197515
+08:52:55 Dataset points duplicate each other: 197513 and 197512
+08:52:55 Dataset points duplicate each other: 197500 and 197499
+08:52:57 Found 22 duplicates in the dataset
+08:52:57 Read 1177 items from the dataset
+
+08:53:09 Downloaded 521 objects from OSM
+08:53:14 Matched 144 points
+08:53:14 Removed 21 unmatched duplicates
+08:53:14 Adding 1012 unmatched dataset points
+08:53:14 Deleted 0 and retagged 377 unmatched objects from OSM
+

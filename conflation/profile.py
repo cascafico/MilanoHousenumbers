@@ -39,8 +39,9 @@ bbox = True
 # tags to replace on matched OSM objects
 master_tags = ('addr:housenumber', 'addr:street')
 
-delete_unmatched = True
-#tag_unmatched = { 'fixme':'questo civico può essere soppresso, in posizione diversa o mancante dal dataset ds634' }
+# delete_unmatched = True cancellerebbe anche i POI con indirizzo
+delete_unmatched = False
+tag_unmatched = { 'fixme':'this addr is missing from source dataset: please check in range >10meters' }
 
 
 # max distance to search for a match in meters

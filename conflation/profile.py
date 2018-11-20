@@ -45,5 +45,5 @@ tag_unmatched = { 'fixme':'this addr is missing from source dataset: please chec
 
 
 # max distance to search for a match in meters
-max_distance = 10
+max_distance = 5
 

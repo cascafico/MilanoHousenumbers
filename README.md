@@ -1,6 +1,9 @@
-## Requisites
-Below steps has been accomplished thru Openrefine (Cleaning to exporting), OSM_conflator tool and audit online tool.
+## Intro
+Milano housenumber import preparation is being preformed thru steps descripted here. Basically: refining input dataset, conflating and auditing. Below steps has been accomplished thru Openrefine (Cleaning to exporting), OSM_conflator tool and audit online tool.
 
+### Tools required
+Openrefine
+OSM_conflator
 
 ## Getting source dataset
 Visit https://dati.comune.milano.it/dataset/ds634-numeri-civici-coordinate and load CSV version in Openrefine

@@ -1,0 +1,13 @@
+    {
+      "id"  : {{(cells["IDMASTER"].value)}},
+      "lat" : {{(cells["LAT_WGS84"].value)}},
+      "lon" : {{(cells["LONG_WGS84"].value)}},
+      "tags" : {
+               "loc_ref" : {{jsonize(cells["IDMASTER"].value)}},
+               "addr:street" : {{jsonize(cells["addr:street"].value)}},
+               "addr:housenumber" : {{jsonize(cells["NUMEROCOMPLETO"].value)}},
+               "addr:postcode" : {{jsonize(cells["addr:postcode"].value)}},
+               "addr:city" : "Milano"
+               }
+    }
+

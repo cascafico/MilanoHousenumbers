@@ -1,0 +1,666 @@
+[
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "STATOCIVICO",
+          "expression": "value",
+          "columnName": "STATOCIVICO",
+          "invert": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Soppresso",
+                "l": "Soppresso"
+              }
+            }
+          ],
+          "selectNumber": false,
+          "selectDateTime": false,
+          "selectBoolean": false,
+          "omitBlank": false,
+          "selectBlank": false,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "NUMERO",
+      "LETTERA",
+      "BARRA",
+      "BARRA2",
+      "NUMEROCOMPLETO",
+      "MUNICIPIO",
+      "RESIDENZIALE",
+      "DATA_APPLICAZIONE",
+      "DATA_ATTIVAZIONE",
+      "DATA_SOPPRESSIONE",
+      "ULTIMA_MODIFICA",
+      "DATA_MODFINE",
+      "IDMASTER",
+      "PASSOCARRAIO",
+      "STATO",
+      "TIPO",
+      "DENOMINAZIONE",
+      "DATA_INTITOLAZIONE",
+      "ANNO_SOPPRESSIONE",
+      "DESCRITTIVO",
+      "ANNCSU",
+      "OPENSTREETMAP",
+      "PROGANNCSU",
+      "CAP",
+      "ID_NIL",
+      "NIL",
+      "LONG_WGS84",
+      "LAT_WGS84"
+    ]
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "NUMERO",
+      "LETTERA",
+      "BARRA",
+      "BARRA2",
+      "NUMEROCOMPLETO",
+      "MUNICIPIO",
+      "RESIDENZIALE",
+      "DATA_APPLICAZIONE",
+      "DATA_ATTIVAZIONE",
+      "ULTIMA_MODIFICA",
+      "IDMASTER",
+      "PASSOCARRAIO",
+      "STATO",
+      "TIPO",
+      "DENOMINAZIONE",
+      "DATA_INTITOLAZIONE",
+      "ANNO_SOPPRESSIONE",
+      "DESCRITTIVO",
+      "ANNCSU",
+      "OPENSTREETMAP",
+      "PROGANNCSU",
+      "CAP",
+      "ID_NIL",
+      "NIL",
+      "LONG_WGS84",
+      "LAT_WGS84"
+    ]
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "NUMERO",
+      "LETTERA",
+      "BARRA",
+      "BARRA2",
+      "NUMEROCOMPLETO",
+      "MUNICIPIO",
+      "RESIDENZIALE",
+      "DATA_APPLICAZIONE",
+      "DATA_ATTIVAZIONE",
+      "ULTIMA_MODIFICA",
+      "IDMASTER",
+      "PASSOCARRAIO",
+      "STATO",
+      "TIPO",
+      "DENOMINAZIONE",
+      "DATA_INTITOLAZIONE",
+      "DESCRITTIVO",
+      "ANNCSU",
+      "OPENSTREETMAP",
+      "CAP",
+      "ID_NIL",
+      "NIL",
+      "LONG_WGS84",
+      "LAT_WGS84"
+    ]
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "NUMERO",
+      "LETTERA",
+      "BARRA",
+      "BARRA2",
+      "NUMEROCOMPLETO",
+      "MUNICIPIO",
+      "RESIDENZIALE",
+      "DATA_APPLICAZIONE",
+      "DATA_ATTIVAZIONE",
+      "ULTIMA_MODIFICA",
+      "IDMASTER",
+      "PASSOCARRAIO",
+      "STATO",
+      "TIPO",
+      "DATA_INTITOLAZIONE",
+      "DESCRITTIVO",
+      "ANNCSU",
+      "OPENSTREETMAP",
+      "CAP",
+      "LONG_WGS84",
+      "LAT_WGS84"
+    ]
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "NUMERO",
+      "LETTERA",
+      "BARRA",
+      "BARRA2",
+      "NUMEROCOMPLETO",
+      "MUNICIPIO",
+      "RESIDENZIALE",
+      "DATA_APPLICAZIONE",
+      "DATA_ATTIVAZIONE",
+      "ULTIMA_MODIFICA",
+      "IDMASTER",
+      "PASSOCARRAIO",
+      "TIPO",
+      "DATA_INTITOLAZIONE",
+      "DESCRITTIVO",
+      "ANNCSU",
+      "OPENSTREETMAP",
+      "CAP",
+      "LONG_WGS84",
+      "LAT_WGS84"
+    ]
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column addr:street at index 15 based on column DESCRITTIVO using expression grel:cells[\"TIPO\"].value+\" \"+value",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "addr:street",
+    "columnInsertIndex": 15,
+    "baseColumnName": "DESCRITTIVO",
+    "expression": "grel:cells[\"TIPO\"].value+\" \"+value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "NUMERO",
+      "LETTERA",
+      "BARRA",
+      "BARRA2",
+      "NUMEROCOMPLETO",
+      "MUNICIPIO",
+      "RESIDENZIALE",
+      "DATA_APPLICAZIONE",
+      "DATA_ATTIVAZIONE",
+      "ULTIMA_MODIFICA",
+      "IDMASTER",
+      "PASSOCARRAIO",
+      "DATA_INTITOLAZIONE",
+      "addr:street",
+      "CAP",
+      "LONG_WGS84",
+      "LAT_WGS84"
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\" Del \",\" del \").replace(\" Dei \",\" dei \").replace(\" Di \",\" di \").replace(\" Dei \",\" dei \").replace(\" Delle \",\" delle \")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\" Del \",\" del \").replace(\" Dei \",\" dei \").replace(\" Di \",\" di \").replace(\" Dei \",\" dei \").replace(\" Delle \",\" delle \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\" Degli \",\" degli \").replace(\" Della \",\" della \").replace(\" Dello \",\" dello \").replace(\" Da \",\" da \").replace(\" Al \",\" al \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\" Degli \",\" degli \").replace(\" Della \",\" della \").replace(\" Dello \",\" dello \").replace(\" Da \",\" da \").replace(\" Al \",\" al \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"a'\", \"à\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"a'\", \"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"u'\", \"ù\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"u'\", \"ù\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"o'\", \"ò\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"o'\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"e'\", \"è\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"e'\", \"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"i'\", \"ì\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"i'\", \"ì\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.partition(smartSplit(value,\"'\")[-1])[0]+toTitlecase(value.partition(smartSplit(value,\"'\")[-1])[1])",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.partition(smartSplit(value,\"'\")[-1])[0]+toTitlecase(value.partition(smartSplit(value,\"'\")[-1])[1])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\" Dell'\",\" dell'\").replace(\" D'\",\" d'\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\" Dell'\",\" dell'\").replace(\" D'\",\" d'\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Mose' \", \"Mosè \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Mose' \", \"Mosè \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Niccolo' \", \"Niccolò \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Niccolo' \", \"Niccolò \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Giosue' \", \"Giosuè \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Giosue' \", \"Giosuè \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Moise' \", \"Moisè \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Moise' \", \"Moisè \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Nicolo' \", \"Nicolò \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Nicolo' \", \"Nicolò \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NUMEROCOMPLETO using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMEROCOMPLETO",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LETTERA using expression value.toLowercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LETTERA",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column BARRA using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BARRA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column addr:housenumber at index 4 based on column BARRA2 using expression grel:cells[\"NUMERO\"].value+\nif (isBlank(cells[\"LETTERA\"].value),\"\",cells[\"LETTERA\"].value)+\nif (isBlank(cells[\"BARRA\"].value),\"\",\"/\"+cells[\"BARRA\"].value)+\nif (isBlank(cells[\"BARRA2\"].value),\"\",\" \"+cells[\"BARRA2\"].value)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "addr:housenumber",
+    "columnInsertIndex": 4,
+    "baseColumnName": "BARRA2",
+    "expression": "grel:cells[\"NUMERO\"].value+\nif (isBlank(cells[\"LETTERA\"].value),\"\",cells[\"LETTERA\"].value)+\nif (isBlank(cells[\"BARRA\"].value),\"\",\"/\"+cells[\"BARRA\"].value)+\nif (isBlank(cells[\"BARRA2\"].value),\"\",\" \"+cells[\"BARRA2\"].value)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LONG_WGS84 using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONG_WGS84",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LONG_WGS84 using expression grel:round(value*1000000)/1000000.0",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LONG_WGS84",
+    "expression": "grel:round(value*1000000)/1000000.0",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LAT_WGS84 using expression value.toNumber()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LAT_WGS84",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LAT_WGS84 using expression grel:round(value*1000000)/1000000.0",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LAT_WGS84",
+    "expression": "grel:round(value*1000000)/1000000.0",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column CAP to addr:postcode",
+    "oldColumnName": "CAP",
+    "newColumnName": "addr:postcode"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NUMEROCOMPLETO using expression value.toLowercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "NUMEROCOMPLETO",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

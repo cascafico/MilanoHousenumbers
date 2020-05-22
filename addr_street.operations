@@ -1,0 +1,314 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\" Del \",\" del \").replace(\" Dei \",\" dei \").replace(\" Di \",\" di \").replace(\" Dei \",\" dei \").replace(\" Delle \",\" delle \")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\" Del \",\" del \").replace(\" Dei \",\" dei \").replace(\" Di \",\" di \").replace(\" Dei \",\" dei \").replace(\" Delle \",\" delle \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\" Degli \",\" degli \").replace(\" Della \",\" della \").replace(\" Dello \",\" dello \").replace(\" Da \",\" da \").replace(\" Al \",\" al \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\" Degli \",\" degli \").replace(\" Della \",\" della \").replace(\" Dello \",\" dello \").replace(\" Da \",\" da \").replace(\" Al \",\" al \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"a'\", \"à\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"a'\", \"à\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"u'\", \"ù\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"u'\", \"ù\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"o'\", \"ò\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"o'\", \"ò\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"e'\", \"è\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"e'\", \"è\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"i'\", \"ì\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'$",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"i'\", \"ì\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.partition(smartSplit(value,\"'\")[-1])[0]+toTitlecase(value.partition(smartSplit(value,\"'\")[-1])[1])",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.partition(smartSplit(value,\"'\")[-1])[0]+toTitlecase(value.partition(smartSplit(value,\"'\")[-1])[1])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\" Dell'\",\" dell'\").replace(\" D'\",\" d'\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\" Dell'\",\" dell'\").replace(\" D'\",\" d'\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Mose' \", \"Mosè \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Mose' \", \"Mosè \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Niccolo' \", \"Niccolò \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Niccolo' \", \"Niccolò \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Giosue' \", \"Giosuè \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Giosue' \", \"Giosuè \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Moise' \", \"Moisè \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Moise' \", \"Moisè \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Nicolo' \", \"Nicolò \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "addr:street",
+          "columnName": "addr:street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Nicolo' \", \"Nicolò \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

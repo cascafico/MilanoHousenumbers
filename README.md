@@ -12,16 +12,16 @@ Visit https://dati.comune.milano.it/dataset/ds634-numeri-civici-coordinate and l
 In Openrefine, apply file "operations"
 
 ## Exporting
-In Openrefine, "export templating"
+In Openrefine, "export templating" using "export" file formatting.
 
 #### Subset
-Dataset features 60.000+ nodes, so you can define subsets thru Openrefine facet on MUNICIPIO field
+Dataset features 60.000+ nodes, so you can define subsets thru Openrefine "facet" on MUNICIPIO field.
 
 ## Conflation
 conflate -i <Openrefine exported>.json -v -c preview_test.json -o test.osm profile-py
 
 ## Audit
-Sample audit for subset "MUNICIPIO 5"
+Here you can findf a sample audit for subset "MUNICIPIO 5" (approx 5.000 nodes)
 http://audit.osmz.ru/project/MI-M5/
 
 ## Other resources

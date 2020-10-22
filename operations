@@ -662,5 +662,18 @@
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column addr:street using expression grel:value.replace(\"Fra \", \"Fra' \")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "addr:street",
+    "expression": "grel:value.replace(\"Fra \", \"Fra' \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
   }
 ]

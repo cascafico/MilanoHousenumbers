@@ -19,9 +19,9 @@ overpass_timeout = 300
 #query = [('amenity', 'fuel'),('disused:amenity','fuel')]  namespace disused and abandoned are implicit
 #query = [('amenity', 'fuel'),('ref:mise','.*')] 
 #query = [('addr:postcode', '33050')] 
-#query = [('addr:housenumber','.*')] 
+query = [('addr:housenumber','.*')] 
 #query = [('addr:housenumber','~.*')]  e se lettera e interno non hanno stesso case?
-query = [('addr:street','~.*')] 
+#query = [('addr:street','~.*')] 
 
 # parameter --osm will use indipendently generated queries, ie:
 # http://overpass-turbo.eu/s/BZq

@@ -41,7 +41,7 @@ master_tags = ('addr:housenumber', 'addr:street')
 
 # delete_unmatched = True cancellerebbe anche i POI con indirizzo
 delete_unmatched = False
-tag_unmatched = { 'fixme':'this addr is missing from source dataset: please check' }
+#tag_unmatched = { 'fixme':'this addr is missing from source dataset: please check' }
 
 
 # max distance to search for a match in meters

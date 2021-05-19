@@ -2,14 +2,14 @@
 
 # aggiunge tag source=pippo
 add_source = False
-source = 'PIPPO'
+source = 'Comune di Milano'
 
 # do not add unique reference IDs to OSM?
 
 # aggiunge tag ref:<dataset_id>=<id del Comune di Milano (IDMASTER)>
 # True -> relying only on geometric matching every time
 no_dataset_id = True
-dataset_id = 'ComuneMilano'
+dataset_id = 'Comune di Milano'
 
 # Overpass query to use when searching OSM for data
 #overpass_timeout = 120 default
@@ -19,9 +19,9 @@ overpass_timeout = 300
 #query = [('amenity', 'fuel'),('disused:amenity','fuel')]  namespace disused and abandoned are implicit
 #query = [('amenity', 'fuel'),('ref:mise','.*')] 
 #query = [('addr:postcode', '33050')] 
-query = [('addr:housenumber','.*')] 
+#query = [('addr:housenumber','.*')] 
 #query = [('addr:housenumber','~.*')]  e se lettera e interno non hanno stesso case?
-#query = [('addr:street','~.*')] 
+query = [('addr:street','~.*')] 
 
 # parameter --osm will use indipendently generated queries, ie:
 # http://overpass-turbo.eu/s/BZq
@@ -45,5 +45,5 @@ tag_unmatched = { 'fixme':'this addr is missing from source dataset: please chec
 
 
 # max distance to search for a match in meters
-max_distance = 10
+max_distance = 5
 
